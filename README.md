@@ -1,0 +1,3 @@
+# An example React + D3 + ES6 project
+
+Boilerplate project for creating React+D3 components that compiles ES6 -> ES5 and is performant. Is does this by separating the bundles in two. One for third party deps. The other for the projects source. This prevents browserify from having to parse all the third party source files each time. This is much faster, even when using watchify. Complication also happens on request (on page reload) to prevent double/triple refreshes while waiting for the source files to compile. Instead, the page load only finishes when the source files have finished being transformed.
