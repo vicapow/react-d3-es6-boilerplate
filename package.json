@@ -1,0 +1,30 @@
+{
+  "name": "react-d3-es6-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate project for creating React+D3 components that compiles ES6 -> ES5 and is performant. Is does this by separating the bundles in two. One for third party deps. The other for the projects source. This prevents browserify from having to parse all the third party source files each time. This is much faster, even when using watchify. Complication also happens on request (on page reload) to prevent double/triple refreshes while waiting for the source files to compile. Instead, the page load only finishes when the source files have finished being transformed.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vicapow/react-d3-es6-boilerplate.git"
+  },
+  "author": "Victor Powell <vicapow@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/vicapow/react-d3-es6-boilerplate/issues"
+  },
+  "homepage": "https://github.com/vicapow/react-d3-es6-boilerplate",
+  "dependencies": {
+    "browserify": "^9.0.8",
+    "d3": "^3.5.5",
+    "es6ify": "^1.6.0",
+    "express": "^4.12.3",
+    "mkdirp": "^0.5.0",
+    "react": "^0.13.1",
+    "reactify": "^1.1.0",
+    "watchify": "^3.1.0",
+    "xtend": "^4.0.0"
+  }
+}
